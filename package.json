@@ -1,0 +1,47 @@
+{
+  "name": "formatless",
+  "version": "0.1.0",
+  "description": "An adapter for command line utilities to use different data formats.",
+  "keywords": [
+    "npm",
+    "bower",
+    "format",
+    "json",
+    "cson"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Lehao Zhang",
+    "url": "http://leozhang.me",
+    "email": "hello@leozhang.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ilikebits/formatless.git"
+  },
+  "main": "./dist",
+  "preferGlobal": true,
+  "scripts": {
+    "prepublish": "./node_modules/grunt-cli/bin/grunt",
+    "test": "mocha --compilers coffee:coffee-script/register --reporter spec"
+  },
+  "dependencies": {
+    "bluebird": "*"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "cson": "*",
+
+    "mocha": "*",
+    "chai": "*",
+
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-coffee": "*"
+  },
+  "engines": {
+    "npm": "*",
+    "node": "*"
+  }
+}
